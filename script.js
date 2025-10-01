@@ -10,3 +10,7 @@ const underground = [
     "nettspend",
     "yuke",
 ]
+
+underground.forEach((e) => {
+    document.getElementById("output").innerHTML += `<li>${e}</li>`
+});
