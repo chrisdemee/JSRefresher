@@ -10,7 +10,9 @@ const underground = [
     "nettspend",
     "yuke",
 ]
+// alphabetical order
+underground.sort((a, b) => a.localeCompare(b));
 
-underground.forEach((e) => {
-    document.getElementById("output").innerHTML += `<li>${e}</li>`
+underground.forEach((e, i) => {
+    document.getElementById("output").innerHTML += `<li>${i + 1}. ${e}</li>`;
 });
